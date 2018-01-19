@@ -9,6 +9,6 @@ class Student
       @name, @grade, @id = name, grade. id
     end
 
-    def .save
+    def self.save
     end
 end
