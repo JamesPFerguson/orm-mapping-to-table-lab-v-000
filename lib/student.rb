@@ -10,6 +10,7 @@ class Student
     end
 
     def self.save
+      
     end
 
     def self.create_table
