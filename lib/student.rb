@@ -10,7 +10,7 @@ class Student
     end
 
     def self.save
-      
+      DB[:conn].execute
     end
 
     def self.create_table
