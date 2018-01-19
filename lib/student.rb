@@ -18,8 +18,8 @@ class Student
       DB[:conn].execute("CREATE TABLE IF NOT EXISTS students (id INTEGER PRIMARY KEY, name TEXT, grade INTEGER);")
     end
 
-    def self.create
-
+    def self.create(name, grade, id=nil)
+      self.new(name, grade, id).tap {|student| student.save}
     end
 
     def self.drop_table
