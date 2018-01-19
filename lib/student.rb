@@ -11,4 +11,14 @@ class Student
 
     def self.save
     end
+
+    def self.create_table
+    end
+
+    def self.create
+    end
+
+    def self.drop_table
+    end
+    
 end
