@@ -9,8 +9,8 @@ class Student
       @name, @grade, @id = name, grade, id
     end
 
-    def save(name, grade, id = nil)
-      DB[:conn].execute("INSERT INTO students (name, grade) VALUES (?, ?)", [name, grade])
+    def save
+      DB[:conn].execute("INSERT INTO students (name, grade) VALUES (?, ?)", [@name, @grade])
     end
 
     def self.create_table
