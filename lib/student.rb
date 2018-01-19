@@ -17,7 +17,6 @@ class Student
     end
 
     def self.create
-
     end
 
     def self.drop_table
